@@ -15,7 +15,6 @@ func cases(text string) string {
 			words = append(words[:b], words[b+1:]...)
 		}
 
-
 		if words[b] == "(low)" && b > 0 {
 			words[b-1] = strings.ToLower(words[b-1])
 			words = append(words[:b], words[b+1:]...)
