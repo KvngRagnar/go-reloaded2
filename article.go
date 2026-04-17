@@ -20,7 +20,7 @@ func fixArt(word string) string {
 		}
 
 		if words[b] == "an" && !strings.ContainsAny(vowels, string(words[b+1][0])) {
-			words[b] = "an"
+			words[b] = "a"
 		}
 	}
 	return strings.Join(words, " ")
